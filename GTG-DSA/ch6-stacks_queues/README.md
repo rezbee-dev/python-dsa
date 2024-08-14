@@ -42,3 +42,19 @@ What are some usecases of queues (or FIFO)?
   - Queue will maintain index of the "first" element (aka "front index")
   - When element is dequeued, the "front index" is shifted rightwards
   - the new index is calculated with this formula: `(current_front_index + 1) % num_of_elements_in_queue`
+
+
+## Double-Ended Queues
+
+What is the difference between Queue and Deque (pronounced "deck")?
+- Queue only supports insertion and deletion from _one end_
+- Deque supports insertion and deletion from _both ends_
+
+What are some use-cases of Deque
+- Used for performing clockwise, anti-clockwise operations in O(1)
+- Can be used to implement Stack and Queue  (?)
+- BFS algorithm
+- To manage the order & priority of items (ex: tickets, requests, etc)
+  - Items can be added to the front or back of the queue depending on priority or deadline
+
+_Todo_: Need to implement Deque in python, see p 248
